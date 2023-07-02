@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Touch Some Grass",
+  "description": "Forces You To Touch Some Grass!",
+  "version": "1.0",
+  "icons": {
+    "16": "/images/Logo-16.png",
+    "48": "/images/Logo-48.png",
+    "128": "/images/Logo-128.png"
+  },
+  "action": {
+    "default_icon": {
+        "16": "/images/Logo-16.png",
+        "48": "/images/Logo-48.png",
+        "128": "/images/Logo-128.png"
+      },
+      "default_title": "Learn To Touch Grass!"
+  },
+  "author": "chezyname",
+  "content_scripts": [
+    {
+        "matches": [
+            "https://twitter.com/*"
+        ],
+        "js": ["override.js"],
+        "css": ["text.css"]
+    }
+  ]
+}
