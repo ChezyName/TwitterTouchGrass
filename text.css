@@ -1,0 +1,40 @@
+@keyframes rainbowJR {
+    0%{
+        color: red
+    }
+    16%{
+        color: rgb(255, 0, 132)
+    }
+    32%{
+        color: rgb(83, 16, 114)
+    }
+    48%{
+        color: rgb(0, 166, 255)
+    }
+    64%{
+        color: rgb(83, 16, 114)
+    }
+    80%{
+        color: rgb(255, 0, 132)
+    }
+    100%{
+        color: red
+    }
+}
+
+* {
+    animation: rainbowJR infinite 12s;
+}
+
+@keyframes ZoomOut {
+    0%{
+        background-size: 100rem auto;
+    }
+    100%{
+        background-size: 1rem auto;
+    }
+}
+
+body {
+    animation: ZoomOut 20s forwards;
+}
